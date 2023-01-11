@@ -26,7 +26,8 @@ cat hello.txt # Reads the file
 touch hello.txt # Makes file
 vi hello.txt # Use VIM to edit a file
 ```
-<br>
+
 Try out these commands for manuvering to different directories, making files, reading files, copying files, and so on. What if you want to create and edit a file? We can use vim to edit a file. Use the `touch` command to make a file, type `vi` to edit that file. Now we are in a text editor. Type `i` to be in INSERT mode. Now we can type whatever we want, like "Hello World!!!". To save and exit, type `:wq`. Now, our terminal should look something like this:
-![HelloWorld](/helloworld.png?raw=true "HelloWorld")
+![HelloWorld](/helloworld.png)
+
 Using `cat` to read the file allows us to actually see our edits to `hello.txt`. Good job! We are done!

@@ -1,9 +1,11 @@
 # The Great Gatsby
 ## by F. Scott Fitzgerald
 Buy [here](https://www.amazon.com/Great-Gatsby-F-Scott-Fitzgerald/dp/0743273567)
+<br>
 In my younger and more vulnerable years my father gave
 me some advice that I’ve been turning over in my mind ever
 since.
+<br>
 “Whenever you feel like criticizing any one,” he told me, “just
 remember that all the people in this world haven’t had the advantages 
 that you’ve had.” He didn’t say any more, but we’ve always been unusually

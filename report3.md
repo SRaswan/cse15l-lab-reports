@@ -1,6 +1,8 @@
-Week 3 Lab Report
-Part 1
+# Week 3 Lab Report
+by Shaurya Raswan
 
-Part 2
+## Part 1
 
-Part 3
+## Part 2
+
+## Part 3

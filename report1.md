@@ -38,6 +38,6 @@ Nice!
 What if you want to create and edit a file? If you do not have that hello.txt text file that I had, then we can use vim to edit a file. Use the `touch` command to make a file, type `vi` to edit that file. 
 <img width="814" alt="VIM" src="https://user-images.githubusercontent.com/42948407/215295453-073cebc5-e8d2-44d3-b302-f8c930256e79.png">\
 When you are in the text editor, it should look like how it does above. VIM has 2 modes, intert mode and command mode. Command mode is what we are in right now, and it lets us do certain commands without directly typing on the file (like saving, deleting an entire line where your cursor is with `dd`, pasting an entire line by copying where your cursor is with `yy` and then pasting with `pp`, and so on). Type `i` to be in INSERT mode, which it will show on the bottom. Now we can type whatever we want directly on the file, like "Hello World!!!". To save and quit, type `:wq` in COMMAND mode (press esc key to enter COMMAND mode anytime). Now, our terminal should look something like this when we quit and saved:\
-<img width="690" alt="Screen Shot 2023-01-28 at 3 39 14 PM" src="https://user-images.githubusercontent.com/42948407/215296067-52ef717f-7471-48a5-a867-c0b37b31a05e.png">\
+<img width="690" alt="Screen Shot 2023-01-28 at 3 39 14 PM" src="https://user-images.githubusercontent.com/42948407/215296067-52ef717f-7471-48a5-a867-c0b37b31a05e.png">
 
 Using `cat` to read the file allows us to actually see the content of our file `hello.txt` now. Good job! We are done!

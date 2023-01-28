@@ -6,7 +6,7 @@ Go to this [link](https://code.visualstudio.com/) and download and install VSCod
 ![VSCode](/VSCode.png)
 
 ## Remotely Connecting
-Now we can connect to the virtual servers for CSE 15L called ieng6. Open a file or create any file in VSCode (name it anything you want) and go to terminal on the bottom. Here we can type commands and remotely connect. For mac, you can just go to the app called 'Terminal'. If you have Windows, you can download git bash for VSCode specifically. No matter how you choose to connect remotely, type in ssh (secure shell) and your account to login to the ieng6 servers!
+Now we can connect to the virtual servers for CSE 15L called ieng6. Open a file or create any file in VSCode (name it anything you want) and go to terminal on the bottom. Here we can type commands and remotely connect. For mac, you can just go to the app called 'Terminal'. If you have Windows, you can download git bash for VSCode specifically by going to this [link](https://gitforwindows.org/). After downloading git for Windows, make git bash your default terminal in VSCode as seen in this [link](https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal/50527994#50527994). No matter how you choose to connect remotely, type in ssh (secure shell) and your account to login to the ieng6 servers!
 ```
 ssh cs15lwi23abc@ieng6.ucsd.edu
 ```

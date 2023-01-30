@@ -80,12 +80,13 @@ public void testAverageWithoutLowest2() {
 }
 ```
 3. The symptom, as the output of running the tests
-<br>Here the code did not work for this test, which has multiple duplicate numbers, one group which is the lowest number of 1s:
+<br><\br>Here the code did not work for this test, which has multiple duplicate numbers, one group which is the lowest number of 1s:
 <img width="1179" alt="Didn't work" src="https://user-images.githubusercontent.com/42948407/215369252-46ced67d-e6b4-4f52-8819-4ec5063d1937.png">
 But it worked for this test, which also has duplicate numbers but it is not the lowest:
 <img width="533" alt="Worked" src="https://user-images.githubusercontent.com/42948407/215369246-02c46489-c243-471b-a8e8-90ce9035e9aa.png">
 5. The bug, as the before-and-after code change required to fix it
-<br>Above the original code is shown. This is the new code below to fix the bug:
+<br><\br>Above the original code is shown. This is the new code below to fix the bug:
+
 ```
 static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
@@ -101,6 +102,7 @@ static double averageWithoutLowest(double[] arr) {
     return sum / (arr.length - 1);
 }
 ```
+
 This fixes the bug because it first adds all numbers in the array, even the lowest one, and then subtracts it at the end once. This ensures that all duplicates of the lowest value arent included in the sum, and only one instance of the lowest value is not included. The JUnit tests work as shown below.
 <img width="511" alt="Fixed" src="https://user-images.githubusercontent.com/42948407/215370623-fdcea930-5f07-4ba4-81af-8b6122e9c049.png">
 

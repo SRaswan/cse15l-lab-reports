@@ -80,12 +80,14 @@ public void testAverageWithoutLowest2() {
 }
 ```
 3. The symptom, as the output of running the tests
+<br/>
 Here the code did not work for this test, which has multiple duplicate numbers, one group which is the lowest number of 1s:
 <img width="1179" alt="Didn't work" src="https://user-images.githubusercontent.com/42948407/215369252-46ced67d-e6b4-4f52-8819-4ec5063d1937.png">
 But it worked for this test, which also has duplicate numbers but it is not the lowest:
 <img width="533" alt="Worked" src="https://user-images.githubusercontent.com/42948407/215369246-02c46489-c243-471b-a8e8-90ce9035e9aa.png">
 5. The bug, as the before-and-after code change required to fix it
-Above the original code is shown. This is the new code below to fix the bug:\
+<br/>
+Above the original code is shown. This is the new code below to fix the bug:
 
 ```
 static double averageWithoutLowest(double[] arr) {

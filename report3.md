@@ -51,7 +51,7 @@ The handleRequest method is called with the parameter, URI url. The parameter pa
 
 2. Screenshot with "Hey" added\
 <img width="585" alt="Screen Shot 2023-01-29 at 11 09 48 PM" src="https://user-images.githubusercontent.com/42948407/215411052-ccf33811-d0de-4aec-83f2-b4d50a12ba7e.png">\
-All of the methods from the previous screenshot are used, however, the values of relavant fields were altered. Although the getPath() method still returns a string containing "/add-message", the getQuery() method is different. This is because getQuery() returns "s=Hey", and therefore the parameters string array is split with "s" and "Hey". The first element of parameters is the same. However, the second element in the array is actually appended to the StringBuilder, making the values of relavent fields different from the first screenshot and the StringBuilder now includes another different word.
+All of the methods from the previous screenshot are used, however, the values of relevant fields were altered. Although the getPath() method still returns a string containing "/add-message", the getQuery() method is different. This is because getQuery() returns "s=Hey", and therefore the parameters string array is split with "s" and "Hey". The first element of parameters is the same. However, the second new element in the array is appended to the StringBuilder, making the values of relevent fields different from the first screenshot and the StringBuilder now includes another word.
 
 3. Screenshot with "Hi" added\
 <img width="578" alt="Screen Shot 2023-01-29 at 11 10 00 PM" src="https://user-images.githubusercontent.com/42948407/215411116-b1c7a187-fe74-45eb-9ded-db7449bf5d53.png">\
@@ -121,13 +121,13 @@ static double averageWithoutLowest(double[] arr) {
 }
 ```
 
-This fixes the bug because it first adds all numbers in the array, even the lowest one, and then subtracts it at the end once. This ensures that all duplicates of the lowest value arent included in the sum, and only one instance of the lowest value is not included. The JUnit tests work as shown below.\
+This fixes the bug because it first adds all numbers in the array, even the lowest one, and then subtracts it at the end once. This ensures that all duplicates of the lowest value aren't included in the sum, and only one instance of the lowest value is not included. The JUnit tests work as shown below.\
 <img width="511" alt="Fixed" src="https://user-images.githubusercontent.com/42948407/215370623-fdcea930-5f07-4ba4-81af-8b6122e9c049.png">
 
 ## Part 3
 Learning how to create my own web server was extremely interesting and made a lot of different ideas click into place with me. I never exactly knew how websites function behind the scenes and understanding the basic core of remotely connecting to a server and running the web server with Java was a whole new revelation for me. I was even able to connect to other people's web servers with the right port number and URI, as seen below.\
 <img width="414" alt="Connect" src="https://user-images.githubusercontent.com/42948407/215371207-ea68bfce-8c0f-4b9f-a9a5-0a59e391afc5.png">\
-By interacting with their website and increment their number, I came to a better understanding of the backend and how data like variables are stored on the web server. SearchEngine.java was my favorite problem to solve in lab Week 2 because I was able to apply my Java skills to a real application by compiling my code and running it on a web server. Other people are able to connect and add or search for their own words. Here is my code below:
+By interacting with their website and incrementing their number, I came to a better understanding of the backend and how data like integers or ArrayLists are stored on the web server. Our programs evolved from just being local files to now something that more people can remotely interact with. SearchEngine.java was my favorite problem to solve in lab Week 2 because I was able to apply my Java skills to a real application by compiling my code and running it on a web server. Other people are able to connect and add or search for their own words. Here is my code below:
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -181,4 +181,4 @@ class NumberServer {
     }
 }
 ```
-Lerning how data can seamlessly display on different systems was super engaging, and I hope to learn more about web development in the future.
+Learning how data can seamlessly display on different systems was super engaging, and I hope to learn more about web development in the future.

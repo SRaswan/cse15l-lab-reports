@@ -51,15 +51,15 @@ Below are some screenshots of using this web server (specifically the add-messag
 <img width="641" alt="Screen Shot 2023-01-29 at 11 09 34 PM" src="https://user-images.githubusercontent.com/42948407/215411022-d3df586c-16c7-4a52-8ce8-04ed2d60a782.png">\
 The handleRequest method is called with the parameter, URI url. The parameter passed contains the path to add-message and the query that has the data of the message we need. To see the data that the URI url object has for us, 2 main methods are called. One method is getPath(), which gets the path "/add-message" as a string in this request. Then the next method is getQuery(), which returns the "s=Hello?" string in the url. Queries are determined after the "?" in the url. We use the split() method to split the query with the "=" parameter passed in it. This returns a string array that lets us contain the word string that is to be added. We use the equals() method to compare if 2 strings are equal, comparing if the url path is only "/" as a parameter (default page url) which it is not. We also use it to see if the first part of the query is "s", which indicates that we need to add the word after the "=" to our StringBuilder. We use the contains() method to see if a string contains another string inside, passing in "/add-message" as a parameter to check if "/add-message" is part of the url to indicate to the program that we need to add a new word. We also use the append() method to append the string (and newline) in the parameter to our StringBuilder. We also use String.format() and toString() to format and print the StringBuilder.
 
-2. Screenshot with "Hey" added
+2. Screenshot with "Hey" added\
 <img width="585" alt="Screen Shot 2023-01-29 at 11 09 48 PM" src="https://user-images.githubusercontent.com/42948407/215411052-ccf33811-d0de-4aec-83f2-b4d50a12ba7e.png">\
 All of the methods from the previous screenshot are used, however, the values of relavant fields were altered. Although the getPath() method still returns a string containing "/add-message", the getQuery() method is different. This is because getQuery() returns "s=Hey", and therefore the parameters string array is split with "s" and "Hey". The first element of parameters is the same. However, the second element in the array is actually appended to the StringBuilder, making the values of relavent fields different from the first screenshot and the StringBuilder now includes another different word.
 
-3. Screenshot with "Hi" added
+3. Screenshot with "Hi" added\
 <img width="578" alt="Screen Shot 2023-01-29 at 11 10 00 PM" src="https://user-images.githubusercontent.com/42948407/215411116-b1c7a187-fe74-45eb-9ded-db7449bf5d53.png">\
 Similar to the second screenshot, the path is the same however the query is different. A new, different word is added to the StringBuilder as our query is different. The word "Hi" is added to our StringBuilder.
 
-5. Screenshot on defaul web server URL
+5. Screenshot on defaul web server URL\
 <img width="441" alt="Screen Shot 2023-01-29 at 11 10 13 PM" src="https://user-images.githubusercontent.com/42948407/215411137-45f95c67-cf97-48d2-aa0c-c58d87c90171.png">\
 The handleRequest method is called and the parameter, URI url, is the value of the path "/", or the default url with no query. Therefore, only the first if statement is run, as getPath() is different from the first 3 screenshots. StringBuilder is not updated, however, it is still printed using the methods String.format() and toString().
 

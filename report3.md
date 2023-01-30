@@ -47,5 +47,43 @@ class StringServer {
 
 
 ## Part 2
+In ArrayExamples.java, the averageWithoutLowest method has a bug. Here is the code for averageWithoutLowest (not fixed yet):
+```
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+    }
+    return sum / (arr.length - 1);
+  }
+```
+To show where the bug is, I will show:
+1. A failure-inducing input for the buggy program, as a JUnit test and any associated code
+```
+@Test
+public void testAverageWithoutLowest1() {
+    double[] input1 = { 1, 2, 3, 3, 1, 1};
+    assertEquals(2, (int) ArrayExamples.averageWithoutLowest(input1));
+}
+```
+2. An input that doesn’t induce a failure, as a JUnit test and any associated code
+```
+@Test
+public void testAverageWithoutLowest2() {
+    double[] input1 = { 1, 2, 3, 3, 5, 7};
+    assertEquals(4, (int) ArrayExamples.averageWithoutLowest(input1));
+}
+```
+3. The symptom, as the output of running the tests
+Here the code did not work for this test, which has multiple duplicate numbers, one group which is the lowest number of 1s:
+<img width="1179" alt="Didn't work" src="https://user-images.githubusercontent.com/42948407/215369252-46ced67d-e6b4-4f52-8819-4ec5063d1937.png">
+But it worked for this test, which also has duplicate numbers but it is not the lowest:
+<img width="533" alt="Worked" src="https://user-images.githubusercontent.com/42948407/215369246-02c46489-c243-471b-a8e8-90ce9035e9aa.png">
+5. The bug, as the before-and-after code change required to fix it
 
 ## Part 3

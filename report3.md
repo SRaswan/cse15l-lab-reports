@@ -42,9 +42,9 @@ class StringServer {
     }
 }
 ```
-Which methods in your code are called? <\br>
-What are the relevant arguments to those methods, and the values of any relevant fields of the class? <\br>
-How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why. <\br>
+Which methods in your code are called?\
+What are the relevant arguments to those methods, and the values of any relevant fields of the class?\
+How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.\
 1. Screenshot with "Hello?" added\
 <img width="641" alt="Screen Shot 2023-01-29 at 11 09 34 PM" src="https://user-images.githubusercontent.com/42948407/215411022-d3df586c-16c7-4a52-8ce8-04ed2d60a782.png">\
 The handleRequest method is called with the parameter, URI url. The parameter passed contains the path to add-message and the query that has the data of the message we need. To see the data that the URI url object has for us, 2 main methods are called. One method is getPath(), which gets the path "/add-message" as a string in this request. Then the next method is getQuery(), which returns the "s=Hello?" string in the url. Queries are determined after the "?" in the url. We use the split() method to split the query with the "=" parameter passed in it. This returns a string array that lets us contain the word string that is to be added. We use the equals() method to compare if 2 strings are equal, comparing if the url path is only "/" as a parameter (default page url) which it is not. We also use it to see if the first part of the query is "s", which indicates that we need to add the word after the "=" to our StringBuilder. We use the contains() method to see if a string contains another string inside, passing in "/add-message" as a parameter to check if "/add-message" is part of the url to indicate to the program that we need to add a new word. We also use the append() method to append the string (and newline) in the parameter to our StringBuilder. We also use String.format() and toString() to format and print the StringBuilder.

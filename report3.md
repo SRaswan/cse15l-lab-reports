@@ -190,8 +190,8 @@ Here is an intresting usage of `-c` that is hard to replicate using `wc`. Essent
 Source: https://en.wikibooks.org/wiki/Grep
 
 ## Sources
-`man grep` shows helpful options and a description of grep.
-https://www.gnu.org/software/grep/manual/grep.html
-https://man7.org/linux/man-pages/man1/grep.1.html
-https://www.geeksforgeeks.org/grep-command-in-unixlinux/
-https://en.wikibooks.org/wiki/Grep
+`man grep` shows helpful options and a description of grep. <br>
+https://www.gnu.org/software/grep/manual/grep.html<br>
+https://man7.org/linux/man-pages/man1/grep.1.html<br>
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/<br>
+https://en.wikibooks.org/wiki/Grep<br>

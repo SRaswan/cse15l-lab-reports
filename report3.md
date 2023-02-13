@@ -1,7 +1,7 @@
 # Lab Report 3
 
-## The `grep` Command
-Lets say we have the skill-demo1-data repository on our local computer. We can retrive it by doing `git clone https://github.com/ucsd-cse15l-w23/skill-demo1-data`. Here we can use the grep command to search and match through directories and files in the skill-demo1-data repo.
+## The grep Command
+Lets say we have the skill-demo1-data repository on our local computer. We can retrive it by doing `git clone https://github.com/ucsd-cse15l-w23/skill-demo1-data`. Here we can use the grep command to search and match through directories and files in the skill-demo1-data repo, using a specific pattern that we want to search for.
 
 ## The Recursive Option
 The `-r` option stands for recursive. This means that the command recursivley goes through each file in the repository looking for the string that maches the one listed string, or "pattern". For example, we can use the grep option like this in the skill-demo1-data repository on the home directory (in the skill-demo1-data folder).<br>

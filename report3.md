@@ -15,7 +15,7 @@ Output:
 written_2/travel_guides/berlitz1/WhatToDublin.txt:        the RDS. Greyhound racing is on at Shelbourne Park, Ringsend, and at
 written_2/travel_guides/berlitz1/WhereToDublin.txt:        Grand Canal Basin, Ringsend, off Pearse Street, Dublin
 ```
-The command recursivley looks for all content in each file in all of the folders, starting from the current directory path. It looks for the word "Ringsend" througout all the content and outputs the file paths and part of the content that contains the word in context. This is extremley helpful because otherwise we would need to state a single filepath in the grep command like `grep 'Ringsend' file/path'`. The recursive option lets us look at multiple files instead of just one. Another example shows if we use two words. <\br>
+The command recursivley looks for all content in each file in all of the folders, starting from the current directory path. It looks for the word "Ringsend" througout all the content and outputs the file paths and part of the content that contains the word in context. This is extremley helpful because otherwise we would need to state a single filepath in the grep command like `grep 'Ringsend' file/path'`. The recursive option lets us look at multiple files instead of just one. Another example shows if we use two words. <br>
 Input:
 ```
 grep -r 'rive droite'

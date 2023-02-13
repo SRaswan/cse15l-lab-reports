@@ -1,5 +1,4 @@
 # Lab Report 3
-by Shaurya Raswan
 
 ## The `grep` Command
 Lets say we have the skill-demo1-data repository on our local computer. We can retrive it by doing `git clone https://github.com/ucsd-cse15l-w23/skill-demo1-data`. Here we can use the grep command to search and match through directories and files in the skill-demo1-data repo.

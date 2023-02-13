@@ -1,10 +1,10 @@
 # Lab Report 3
 
 ## The grep Command
-Lets say we have the skill-demo1-data repository on our local computer. We can retrive it by doing `git clone https://github.com/ucsd-cse15l-w23/skill-demo1-data`. Here we can use the grep command to search and match through directories and files in the skill-demo1-data repo, using a specific pattern that we want to search for.
+Let's say we have the skill-demo1-data repository on our local computer. We can retrieve it by doing `git clone https://github.com/ucsd-cse15l-w23/skill-demo1-data`. Here we can use the grep command to search and match through directories and files in the skill-demo1-data repo, using a specific pattern that we want to search for.
 
 ## The Recursive Option
-The `-r` option stands for recursive. This means that the command recursivley goes through each file in the repository looking for the string that maches the one listed string, or "pattern". For example, we can use the grep option like this in the skill-demo1-data repository on the home directory (in the skill-demo1-data folder).<br>
+The `-r` stands for recursive. This means that the command recursively goes through each file in the repository looking for the string that matches the one listed string, or "pattern". For example, we can use the grep option like this in the skill-demo1-data repository on the home directory (in the skill-demo1-data folder).<br>
 Input:
 ```
 grep -r 'Ringsend'
@@ -14,7 +14,7 @@ Output:
 written_2/travel_guides/berlitz1/WhatToDublin.txt:        the RDS. Greyhound racing is on at Shelbourne Park, Ringsend, and at
 written_2/travel_guides/berlitz1/WhereToDublin.txt:        Grand Canal Basin, Ringsend, off Pearse Street, Dublin
 ```
-The command recursivley looks for all content in each file in all of the folders, starting from the current directory path. It looks for the word "Ringsend" througout all the content and outputs the file paths and part of the content that contains the word in context. This is extremley helpful because otherwise we would need to state a single filepath in the grep command like `grep 'Ringsend' file/path'`. The recursive option lets us look at multiple files instead of just one. Another example shows if we use two words. <br>
+The command recursively looks for all content in each file in all of the folders, starting from the current directory path. It looks for the word "Ringsend" throughout all the content and outputs the file paths and part of the content that contains the word in context. This is extremely helpful because otherwise, we would need to state a single file path in the grep command like `grep 'Ringsend' file/path`. The recursive option lets us look at multiple files instead of just one. Another example shows if we use two words. <br>
 Input:
 ```
 grep -r 'rive droite'
@@ -23,7 +23,7 @@ Output:
 ```
 written_2/travel_guides/berlitz2/Paris-WhereToGo.txt:The sprawling Right Bank (rive droite) covers the whole range of Paris’s social life, from ultra-chic to downright sleazy. It claims the most luxurious shopping areas, the presidential Elysée Palace, the grands boulevards and financial district, but also, farther north, seamy Clichy and Pigalle, as well as hilly Montmartre, where modern art could be said to have begun. Back in the middle of it all, the huge Louvre museum makes its own magnificent statement. Just to the east, Les Halles, Beaubourg (around the Centre Georges-Pompidou), and place de la Bastille have each been transformed by controversial projects. The variety and energy of the nightlife here has overtaken that of the Left Bank. Even the charming old Marais and its Jewish quarter, representing the old Paris of the 17th century, have taken on a new fashionable appearance with the influx of trendy boutiques.
 ```
-Here we can see that we can recursivley look for two words right next to eachother. In this way we can search for entire phrases or sentences. <br>
+Here we can see that we can recursively look for two words right next to each other. In this way, we can search for entire phrases or sentences. <br>
 Source: https://www.gnu.org/software/grep/manual/grep.html
 
 ## The Files with Matches Option
@@ -36,7 +36,7 @@ Output:
 ```
 ./written_2/travel_guides/berlitz2/Paris-WhereToGo.txt
 ```
-Here the option is not very helpful because we already know the file that we are using grep on (as we had to type it out in the first place). However, the output does not show where 'tower' is used, which makes the output much less cluttered than it would be without `-l`. In fact, tower is shown 16 times. The commands above in the `-r` section show very cluttered outputs. Only showing filenames expecially helpful when we recursivley go through mutliple files. We can pair this option with the `-r` option.<br>
+Here the option is not very helpful because we already know the file that we are using grep on (as we had to type it out in the first place). However, the output does not show where 'tower' is used, which makes the output much less cluttered than it would be without `-l`. In fact, tower is shown 16 times. The commands above in the `-r` section show very cluttered outputs. Only showing filenames is especially helpful when we recursively go through multiple files. We can pair this option with the `-r` option.<br>
 Input:
 ```
 grep -r 'Dublin' -l
@@ -52,11 +52,11 @@ written_2/travel_guides/berlitz1/WhatToDublin.txt
 written_2/travel_guides/berlitz1/WhatToIbiza.txt
 written_2/travel_guides/berlitz1/WhereToDublin.txt
 ```
-Here every file is checked recursivley for 'Dublin'. Instead of printing out all the content for each file, it only shows file names. This is many files, so it would look much more convoluted without the `-l` option. <br>
+Here every file is checked recursively for 'Dublin'. Instead of printing out all the content for each file, it only shows file names. This is many files, so it would look much more convoluted without the `-l` option. <br>
 Source: https://man7.org/linux/man-pages/man1/grep.1.html
 
 ## The Ignore Case Option
-The `-i` option ignores the case of the pattern that you are searching for. This means that uppercase and lowercase letters are searched for interchangably, even if your input string is all lowercase or all uppercase. This is important when looking for a word that can be used in both uppercase and lowercase throughout a file (or multiple files).<br>
+The `-i` option ignores the case of the pattern that you are searching for. This means that uppercase and lowercase letters are searched for interchangeably, even if your input string is all lowercase or all uppercase. This is important when looking for a word that can be used in both uppercase and lowercase throughout a file (or multiple files).<br>
 Input:
 ```
 grep 'treasure' written_2/travel_guides/berlitz2/Cuba-WhereToGo.txt -i
@@ -70,7 +70,7 @@ A more appealing prospect is picturesque Guamá, a half-hour boat ride from La B
 Aimless wandering is especially fruitful in Trinidad — and, since dozens of street names have changed and neither maps nor residents seem sure of what to call many of them, roaming without a plan is the only practical solution. Virtually every street is its own colonial treasure and feast for the eyes. Near the bus station, you might stumble across the musical septet “Los Pinos” jamming in the street, just out of reach of kids playing stickball. Farther afield, southeast along Calle J. M. Márquez, you’ll find Ermita de Santa Ana, a bricked-up church overlooking the town on a hill where boys fly homemade kites.
 Many visitors prefer Cuba’s second city (population 420,000) to the capital. Santiago de Cuba (880 km/546 miles southeast of Havana) is unpolished, has few grand palaces, and cannot compare with the colonial treasures found in Havana and Trinidad. But it is unfailingly vibrant and seductive, exuding a feel all its own. Enclosed by the Sierra Maestra mountains, Santiago can also be wickedly hot. Santiagueros negotiate their hilly streets by keeping to the shady sides, and they relax with little urgency on overhanging balconies.
 ```
-The output shows all parts of the file where 'treasure' is shown. However, the difference between using `-i` and not using `-i` is that parts that have an uppercase 'Treasure', such as when the file says "Robert Louis Stevenson’s Treasure Island", will not be shown unless the `-i` option is used. This is very important as names are almost always uppercase in the start. <br>
+The output shows all parts of the file where 'treasure' is shown. However, the difference between using `-i` and not using `-i` is that parts that have an uppercase 'Treasure', such as when the file says "Robert Louis Stevenson’s Treasure Island", will not be shown unless the `-i` option is used. This is very important as names are almost always uppercase at the starting letter. <br>
 Input:
 ```
 grep 'dublin' -r -l -i
@@ -86,11 +86,11 @@ written_2/travel_guides/berlitz1/WhatToDublin.txt
 written_2/travel_guides/berlitz1/WhatToIbiza.txt
 written_2/travel_guides/berlitz1/WhereToDublin.txt
 ```
-Here we are using all of the options we learned so far. We resursivley (`-r` option) look though the contents of each file for the word 'dublin'. However, the ignore case option means that we do not care about uppercases or lowercases, so it will also include 'Dublin", or even 'DuBlIn" (if that ever showed up). Then we only print the filenames so the output is less cluttered (`-l` option). If we did not use `-i`, then nothing would show up on the output because the word 'dublin' in all lowercase never shows up, only 'Dublin' does. <br>
+Here we are using all of the options we learned so far. We recursively (`-r` option) look through the contents of each file for the word 'dublin'. However, the ignore case option means that we do not care about uppercases or lowercases, so it will also include 'Dublin", or even 'DuBlIn" (if that ever showed up). Then we only print the filenames so the output is less cluttered (`-l` option). If we did not use `-i`, then nothing would show up on the output because the word 'dublin' in all lowercase never shows up, only 'Dublin' does. <br>
 Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 ## The Count Option
-The `-c` option is a very convinient option that servers the purpose of the `wc` command when using grep by only showing the number of times the pattern comes up (number of lines that the pattern shows up in).<br>
+The `-c` option is a very convenient option that servers the purpose of the `wc` command when using grep by only showing the number of times the pattern comes up (number of lines that the pattern shows up in).<br>
 Input:
 ```
 grep 'France' -c written_2/travel_guides/berlitz1/IntroFrance.txt
@@ -185,7 +185,7 @@ Vallarta-History.txt:1
 Vallarta-WhatToDo.txt:1
 Vallarta-WhereToGo.txt:12
 ```
-Here is an intresting usage of `-c` that is hard to replicate using `wc`. Essentially, from berlitz2, we recursivley checked the content of each file for the word "tree", ignoring the case with the `-i` option. The count option does not show the context for which the word appears, however, it shows the number of times that the word has shown up in each file in berlitz2, even if it shows up 0 times. This is very helpful for seeing which files contain the most or least of a specific pattern. <br>
+Here is an interesting usage of `-c` that is hard to replicate using `wc`. Essentially, from berlitz2, we recursively checked the content of each file for the word "tree", ignoring the case with the `-i` option. The count option does not show the context for which the word appears, however, it shows the number of times that the word has shown up in each file in berlitz2, even if it shows up 0 times. This is very helpful for seeing which files contain the most or least of a specific pattern. <br>
 Source: https://en.wikibooks.org/wiki/Grep
 
 ## Sources

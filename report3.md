@@ -5,7 +5,7 @@ by Shaurya Raswan
 Lets say we have the skill-demo1-data repository on our local computer. We can retrive it by doing `git clone https://github.com/ucsd-cse15l-w23/skill-demo1-data`. Here we can use the grep command to search and match through directories and files in the skill-demo1-data repo.
 
 ## The `-r` option
-The `-r` option stands for recursive. This means that the command recursivley goes through each file in the repository looking for the string that maches the one listed string, or "pattern". For example, we can use the grep option like this in the skill-demo1-data repository on the home directory (in the skill-demo1-data folder).
+The `-r` option stands for recursive. This means that the command recursivley goes through each file in the repository looking for the string that maches the one listed string, or "pattern". For example, we can use the grep option like this in the skill-demo1-data repository on the home directory (in the skill-demo1-data folder).<\br>
 Input:
 ```
 grep -r 'Ringsend'
@@ -15,7 +15,7 @@ Output:
 written_2/travel_guides/berlitz1/WhatToDublin.txt:        the RDS. Greyhound racing is on at Shelbourne Park, Ringsend, and at
 written_2/travel_guides/berlitz1/WhereToDublin.txt:        Grand Canal Basin, Ringsend, off Pearse Street, Dublin
 ```
-The command recursivley looks for all content in each file in all of the folders, starting from the current directory path. It looks for the word "Ringsend" througout all the content and outputs the file paths and part of the content that contains the word in context. This is extremley helpful because otherwise we would need to state a single filepath in the grep command like `grep 'Ringsend' file/path'`. The recursive option lets us look at multiple files instead of just one. Another example shows if we use two words.
+The command recursivley looks for all content in each file in all of the folders, starting from the current directory path. It looks for the word "Ringsend" througout all the content and outputs the file paths and part of the content that contains the word in context. This is extremley helpful because otherwise we would need to state a single filepath in the grep command like `grep 'Ringsend' file/path'`. The recursive option lets us look at multiple files instead of just one. Another example shows if we use two words. <\br>
 Input:
 ```
 grep -r 'rive droite'

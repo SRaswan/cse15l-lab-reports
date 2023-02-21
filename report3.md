@@ -24,7 +24,7 @@ Output:
 written_2/travel_guides/berlitz2/Paris-WhereToGo.txt:The sprawling Right Bank (rive droite) covers the whole range of Paris’s social life, from ultra-chic to downright sleazy. It claims the most luxurious shopping areas, the presidential Elysée Palace, the grands boulevards and financial district, but also, farther north, seamy Clichy and Pigalle, as well as hilly Montmartre, where modern art could be said to have begun. Back in the middle of it all, the huge Louvre museum makes its own magnificent statement. Just to the east, Les Halles, Beaubourg (around the Centre Georges-Pompidou), and place de la Bastille have each been transformed by controversial projects. The variety and energy of the nightlife here has overtaken that of the Left Bank. Even the charming old Marais and its Jewish quarter, representing the old Paris of the 17th century, have taken on a new fashionable appearance with the influx of trendy boutiques.
 ```
 Here we can see that we can recursively look for two words right next to each other. In this way, we can search for entire phrases or sentences. <br>
-Source: https://www.gnu.org/software/grep/manual/grep.html
+Source: [[Link](https://www.gnu.org/software/grep/manual/grep.html)](https://www.gnu.org/software/grep/manual/grep.html)
 
 ## The Files with Matches Option
 The `-l` option suppresses the normal output by only printing the file name, not the context for which the word is in. Therefore, it does not show the content of any files.<br>

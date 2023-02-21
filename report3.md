@@ -87,7 +87,7 @@ written_2/travel_guides/berlitz1/WhatToIbiza.txt
 written_2/travel_guides/berlitz1/WhereToDublin.txt
 ```
 Here we are using all of the options we learned so far. We recursively (`-r` option) look through the contents of each file for the word 'dublin'. However, the ignore case option means that we do not care about uppercases or lowercases, so it will also include 'Dublin", or even 'DuBlIn" (if that ever showed up). Then we only print the filenames so the output is less cluttered (`-l` option). If we did not use `-i`, then nothing would show up on the output because the word 'dublin' in all lowercase never shows up, only 'Dublin' does. <br>
-Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+Source: [https://www.geeksforgeeks.org/grep-command-in-unixlinux/](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
 ## The Count Option
 The `-c` option is a very convenient option that servers the purpose of the `wc` command when using grep by only showing the number of times the pattern comes up (number of lines that the pattern shows up in).<br>

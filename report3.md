@@ -24,7 +24,7 @@ Output:
 written_2/travel_guides/berlitz2/Paris-WhereToGo.txt:The sprawling Right Bank (rive droite) covers the whole range of Paris’s social life, from ultra-chic to downright sleazy. It claims the most luxurious shopping areas, the presidential Elysée Palace, the grands boulevards and financial district, but also, farther north, seamy Clichy and Pigalle, as well as hilly Montmartre, where modern art could be said to have begun. Back in the middle of it all, the huge Louvre museum makes its own magnificent statement. Just to the east, Les Halles, Beaubourg (around the Centre Georges-Pompidou), and place de la Bastille have each been transformed by controversial projects. The variety and energy of the nightlife here has overtaken that of the Left Bank. Even the charming old Marais and its Jewish quarter, representing the old Paris of the 17th century, have taken on a new fashionable appearance with the influx of trendy boutiques.
 ```
 Here we can see that we can recursively look for two words right next to each other. In this way, we can search for entire phrases or sentences. <br>
-Source: [[Link](https://www.gnu.org/software/grep/manual/grep.html)](https://www.gnu.org/software/grep/manual/grep.html)
+Source: [https://www.gnu.org/software/grep/manual/grep.html](https://www.gnu.org/software/grep/manual/grep.html)
 
 ## The Files with Matches Option
 The `-l` option suppresses the normal output by only printing the file name, not the context for which the word is in. Therefore, it does not show the content of any files.<br>
@@ -53,7 +53,7 @@ written_2/travel_guides/berlitz1/WhatToIbiza.txt
 written_2/travel_guides/berlitz1/WhereToDublin.txt
 ```
 Here every file is checked recursively for 'Dublin'. Instead of printing out all the content for each file, it only shows file names. This is many files, so it would look much more convoluted without the `-l` option. <br>
-Source: https://man7.org/linux/man-pages/man1/grep.1.html
+Source: [https://man7.org/linux/man-pages/man1/grep.1.html](https://man7.org/linux/man-pages/man1/grep.1.html)
 
 ## The Ignore Case Option
 The `-i` option ignores the case of the pattern that you are searching for. This means that uppercase and lowercase letters are searched for interchangeably, even if your input string is all lowercase or all uppercase. This is important when looking for a word that can be used in both uppercase and lowercase throughout a file (or multiple files).<br>
@@ -186,11 +186,11 @@ Vallarta-WhatToDo.txt:1
 Vallarta-WhereToGo.txt:12
 ```
 Here is an interesting usage of `-c` that is hard to replicate using `wc`. Essentially, from berlitz2, we recursively checked the content of each file for the word "tree", ignoring the case with the `-i` option. The count option does not show the context for which the word appears, however, it shows the number of times that the word has shown up in each file in berlitz2, even if it shows up 0 times. This is very helpful for seeing which files contain the most or least of a specific pattern. <br>
-Source: https://en.wikibooks.org/wiki/Grep
+Source: [https://en.wikibooks.org/wiki/Grep](https://en.wikibooks.org/wiki/Grep)
 
 ## Sources
 `man grep` shows helpful options and a description of grep. <br>
-https://www.gnu.org/software/grep/manual/grep.html<br>
-https://man7.org/linux/man-pages/man1/grep.1.html<br>
-https://www.geeksforgeeks.org/grep-command-in-unixlinux/<br>
-https://en.wikibooks.org/wiki/Grep<br>
+[https://www.gnu.org/software/grep/manual/grep.html](https://www.gnu.org/software/grep/manual/grep.html)<br>
+[https://man7.org/linux/man-pages/man1/grep.1.html](https://man7.org/linux/man-pages/man1/grep.1.html)<br>
+[https://www.geeksforgeeks.org/grep-command-in-unixlinux/](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)<br>
+[https://en.wikibooks.org/wiki/Grep](https://en.wikibooks.org/wiki/Grep)<br>

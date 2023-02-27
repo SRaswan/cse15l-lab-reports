@@ -32,7 +32,7 @@ The `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` command 
 
 ## 9. Commit and push the resulting change to your Github account (you can pick any commit message!)
 <img width="709" alt="Screen Shot 2023-02-27 at 12 26 27 AM" src="https://user-images.githubusercontent.com/42948407/221511912-8a7b6351-1114-492c-8919-1e5cdb43bc56.png">
-<img width="707" alt="Screen Shot 2023-02-27 at 12 26 08 AM" src="https://user-images.githubusercontent.com/42948407/221511955-bd101aca-29f3-46d5-b324-e3bde2b648a7.png">\
+<img width="707" alt="Screen Shot 2023-02-27 at 12 26 08 AM" src="https://user-images.githubusercontent.com/42948407/221511955-bd101aca-29f3-46d5-b324-e3bde2b648a7.png">
 Typed: `git add *<enter>`, `git commit<enter>`, `<i>done`, `<escape>:wq<enter>`, `git push<enter>` <br>
 First we git add all the files that we changed or added. Then we commit with the `git commit` command. This prompts us to write a commit message in vim. Type `i` to be in INSERT mode, which it will show on the bottom. Now we can type whatever we want directly on the file for our commit message. To save and quit, type `:wq` in COMMAND mode (press `esc` key to enter COMMAND mode anytime). When we enter, we can now `git push` because we are in our terminal. This pushes all the new changes to our GitHub repository!
 

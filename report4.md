@@ -25,7 +25,9 @@ We first traverse to lab7 directory. Then we compile all the java files, ListExa
 <img width="415" alt="Screen Shot 2023-02-27 at 12 15 20 AM" src="https://user-images.githubusercontent.com/42948407/221509770-65a20009-0375-45a3-b36e-19ac21b4861d.png">
 <br>
 <img width="707" alt="Screen Shot 2023-02-27 at 12 14 59 AM" src="https://user-images.githubusercontent.com/42948407/221509789-48494301-0e04-4d02-82bb-63fe2c08b519.png">
-<img width="709" alt="Screen Shot 2023-02-27 at 12 12 37 AM" src="https://user-images.githubusercontent.com/42948407/221509805-125c254e-a98a-4f1b-ba62-b0c362a79939.png">\
+<img width="709" alt="Screen Shot 2023-02-27 at 12 12 37 AM" src="https://user-images.githubusercontent.com/42948407/221509805-125c254e-a98a-4f1b-ba62-b0c362a79939.png">
+<br>
+
 Typed: `nano ListExamples.java<enter>`, `<^W>(index2 <`, `<down><down><right><right><right><backspace>2`, `<^X>Y<enter>` <br>
 First, we use the nano command to change the contents of the file. To fix the error, all we need to do is fix the last while loop where index1 is incremented by accident instead of index2. To get there the fastest without constantly doing `<down>`, we can using `<^W>` to search the file for `(index2 <`. This puts our cursor at the start of the while loop. Then we press `<down>` twice and `<right>` three times. Then we delete the `1` and make it `2`. To exit, we do `<^X>`, where then we are prompted to save the buffer by pressing `Y` for yes. We say yes and press enter to save the changes and exit. Now, we have our file fixed.
 

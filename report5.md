@@ -64,6 +64,27 @@ Questions:\
 Which methods in your code are called?\
 What are the relevant arguments to those methods, and the values of any relevant fields of the class?\
 How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+
+1. Inital Screen
+<img width="407" alt="Screen Shot 2023-03-13 at 12 22 03 AM" src="https://user-images.githubusercontent.com/42948407/224634240-01e01f31-46b7-4df5-9dc8-80470bbef766.png">
+2. Adding "Hello!!!"
+<img width="401" alt="Screen Shot 2023-03-13 at 12 24 18 AM" src="https://user-images.githubusercontent.com/42948407/224634297-cf51054b-c03d-4583-b502-220ba679a571.png">
+3. Entire List so Far
+<img width="414" alt="Screen Shot 2023-03-13 at 12 22 29 AM" src="https://user-images.githubusercontent.com/42948407/224634433-5405fe1e-b34a-4d91-95ef-7f77877f8c83.png">
+4. Fast forward after adding multiple words
+<img width="413" alt="Screen Shot 2023-03-13 at 12 23 15 AM" src="https://user-images.githubusercontent.com/42948407/224634345-87be753e-23e4-41cb-8b92-6a8c24ab84c8.png">
+5. 
+<img width="393" alt="Screen Shot 2023-03-13 at 12 24 31 AM" src="https://user-images.githubusercontent.com/42948407/224634493-54c4973e-1169-413e-89e9-adf5b0cdb87e.png">
+6. 
+<img width="377" alt="Screen Shot 2023-03-13 at 12 24 38 AM" src="https://user-images.githubusercontent.com/42948407/224634521-9df1110d-547b-414a-b68d-533c1f91f35d.png">
+7. 
+<img width="386" alt="Screen Shot 2023-03-13 at 12 24 46 AM" src="https://user-images.githubusercontent.com/42948407/224634546-468beba1-1c68-497b-8bcf-55c2d6e681ea.png">
+8. 
+<img width="372" alt="Screen Shot 2023-03-13 at 12 24 54 AM" src="https://user-images.githubusercontent.com/42948407/224634558-aff2563f-0e9d-42db-a881-7bd7d799b02d.png">
+
+
+
+
 1. Screenshot with "Hello?" added\
 <img width="641" alt="Screen Shot 2023-01-29 at 11 09 34 PM" src="https://user-images.githubusercontent.com/42948407/215411022-d3df586c-16c7-4a52-8ce8-04ed2d60a782.png">\
 The handleRequest method is called with the parameter, URI url. The url variable is "http://ieng6-201.ucsd.edu:4444/add-message?s=Hello?". The parameter passed contains the path "/add-message" and the query with the message we need to add. To see the data that the URI url object has for us, 2 main methods are called. One method is getPath(), which gets the path "/add-message" as a string in this request. Then the next method is getQuery(), which returns the "s=Hello?" string in the url. Queries are determined after the "?" in the url. We use the split() method to split the query with the "=" parameter passed in it. This returns a string array with "s" and "Hello?" (the word we need to append). We use the equals() method to compare if 2 strings are equal, comparing if the url path is only "/" as a parameter (default page url) which it is not. We also use it to see if the first part of the query is "s", which indicates that we need to append the word after the "=" to our StringBuilder (which is now already split and contained in a string array). We use the contains() method to see if getPath() contains the "/add-message" string parameter inside, indicating the program to check for a query. We also use the append() method to append the string "Hello?" and newline "\n" in the parameter to our StringBuilder. We also use String.format() and toString() to format and print the StringBuilder.

@@ -65,7 +65,7 @@ Which methods in your code are called?\
 What are the relevant arguments to those methods, and the values of any relevant fields of the class?\
 How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 
-1. Inital Screen
+1. Inital Screen\
 <img width="407" alt="Screen Shot 2023-03-13 at 12 22 03 AM" src="https://user-images.githubusercontent.com/42948407/224634240-01e01f31-46b7-4df5-9dc8-80470bbef766.png">\
 The arraylist word is initated and created. Arraylist found is created too.
 2. Adding "Hello!!!"

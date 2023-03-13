@@ -44,7 +44,7 @@ class Handler implements URLHandler {
     }
 }
 
-class NumberServer {
+class SearchEngine {
     public static void main(String[] args) throws IOException {
         if(args.length == 0){
             System.out.println("Missing port number! Try any number between 1024 to 49151");
@@ -66,37 +66,27 @@ What are the relevant arguments to those methods, and the values of any relevant
 How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 
 1. Inital Screen
-<img width="407" alt="Screen Shot 2023-03-13 at 12 22 03 AM" src="https://user-images.githubusercontent.com/42948407/224634240-01e01f31-46b7-4df5-9dc8-80470bbef766.png">
+<img width="407" alt="Screen Shot 2023-03-13 at 12 22 03 AM" src="https://user-images.githubusercontent.com/42948407/224634240-01e01f31-46b7-4df5-9dc8-80470bbef766.png">\
+The arraylist word is initated and created. Arraylist found is created too.
 2. Adding "Hello!!!"
-<img width="401" alt="Screen Shot 2023-03-13 at 12 24 18 AM" src="https://user-images.githubusercontent.com/42948407/224634297-cf51054b-c03d-4583-b502-220ba679a571.png">
+<img width="401" alt="Screen Shot 2023-03-13 at 12 24 18 AM" src="https://user-images.githubusercontent.com/42948407/224634297-cf51054b-c03d-4583-b502-220ba679a571.png">\
+The query of ?add is checked and the split of s= is found, therefore we are able to add Hello!!! to the arraylist words. Arraylist found is refreshed.
 3. Entire List so Far
-<img width="414" alt="Screen Shot 2023-03-13 at 12 22 29 AM" src="https://user-images.githubusercontent.com/42948407/224634433-5405fe1e-b34a-4d91-95ef-7f77877f8c83.png">
+<img width="414" alt="Screen Shot 2023-03-13 at 12 22 29 AM" src="https://user-images.githubusercontent.com/42948407/224634433-5405fe1e-b34a-4d91-95ef-7f77877f8c83.png">\
+Now we can see the entire list so far when we go to the home directory URL.
 4. Fast forward after adding multiple words
-<img width="413" alt="Screen Shot 2023-03-13 at 12 23 15 AM" src="https://user-images.githubusercontent.com/42948407/224634345-87be753e-23e4-41cb-8b92-6a8c24ab84c8.png">
-5. 
-<img width="393" alt="Screen Shot 2023-03-13 at 12 24 31 AM" src="https://user-images.githubusercontent.com/42948407/224634493-54c4973e-1169-413e-89e9-adf5b0cdb87e.png">
-6. 
-<img width="377" alt="Screen Shot 2023-03-13 at 12 24 38 AM" src="https://user-images.githubusercontent.com/42948407/224634521-9df1110d-547b-414a-b68d-533c1f91f35d.png">
-7. 
-<img width="386" alt="Screen Shot 2023-03-13 at 12 24 46 AM" src="https://user-images.githubusercontent.com/42948407/224634546-468beba1-1c68-497b-8bcf-55c2d6e681ea.png">
-8. 
-<img width="372" alt="Screen Shot 2023-03-13 at 12 24 54 AM" src="https://user-images.githubusercontent.com/42948407/224634558-aff2563f-0e9d-42db-a881-7bd7d799b02d.png">
-
-
-
-
-1. Screenshot with "Hello?" added\
-<img width="641" alt="Screen Shot 2023-01-29 at 11 09 34 PM" src="https://user-images.githubusercontent.com/42948407/215411022-d3df586c-16c7-4a52-8ce8-04ed2d60a782.png">\
-The handleRequest method is called with the parameter, URI url. The url variable is "http://ieng6-201.ucsd.edu:4444/add-message?s=Hello?". The parameter passed contains the path "/add-message" and the query with the message we need to add. To see the data that the URI url object has for us, 2 main methods are called. One method is getPath(), which gets the path "/add-message" as a string in this request. Then the next method is getQuery(), which returns the "s=Hello?" string in the url. Queries are determined after the "?" in the url. We use the split() method to split the query with the "=" parameter passed in it. This returns a string array with "s" and "Hello?" (the word we need to append). We use the equals() method to compare if 2 strings are equal, comparing if the url path is only "/" as a parameter (default page url) which it is not. We also use it to see if the first part of the query is "s", which indicates that we need to append the word after the "=" to our StringBuilder (which is now already split and contained in a string array). We use the contains() method to see if getPath() contains the "/add-message" string parameter inside, indicating the program to check for a query. We also use the append() method to append the string "Hello?" and newline "\n" in the parameter to our StringBuilder. We also use String.format() and toString() to format and print the StringBuilder.
-
-2. Screenshot with "Hey" added\
-<img width="585" alt="Screen Shot 2023-01-29 at 11 09 48 PM" src="https://user-images.githubusercontent.com/42948407/215411052-ccf33811-d0de-4aec-83f2-b4d50a12ba7e.png">\
-The url variable is now "http://ieng6-201.ucsd.edu:4444/add-message?s=Hey". All of the methods from the previous screenshot are used, however, the values of relevant fields were altered. Although the getPath() method still returns a string containing "/add-message", the getQuery() method is different. This is because getQuery() returns "s=Hey", and therefore the parameters string array is split with "s" and "Hey". The first element of parameters is the same. However, the second new element in the array is appended to the StringBuilder, making the values of relevent fields different from the first screenshot and the StringBuilder now includes another word.
-
-3. Screenshot with "Hi" added\
-<img width="578" alt="Screen Shot 2023-01-29 at 11 10 00 PM" src="https://user-images.githubusercontent.com/42948407/215411116-b1c7a187-fe74-45eb-9ded-db7449bf5d53.png">\
-The url variable is now "http://ieng6-201.ucsd.edu:4444/add-message?s=Hi". Similar to the second screenshot, the path is the same however the query is different. A new, different word is added to the StringBuilder as our query is different. The word "Hi" is added to our StringBuilder.
-
-5. Screenshot on defaul web server URL\
-<img width="441" alt="Screen Shot 2023-01-29 at 11 10 13 PM" src="https://user-images.githubusercontent.com/42948407/215411137-45f95c67-cf97-48d2-aa0c-c58d87c90171.png">\
-The handleRequest method is called and the parameter, URI url, is the value of "http://ieng6-201.ucsd.edu:4444/", or the default url with no query. Therefore, only the first if statement is run, as getPath(), which is just "/", is different from the first 3 screenshots. StringBuilder is not updated, however, it is still printed using the methods String.format() and toString().
+<img width="413" alt="Screen Shot 2023-03-13 at 12 23 15 AM" src="https://user-images.githubusercontent.com/42948407/224634345-87be753e-23e4-41cb-8b92-6a8c24ab84c8.png">\
+This adds multiple words to showcase the search engine in the next part.
+5. Search for "bo"
+<img width="393" alt="Screen Shot 2023-03-13 at 12 24 31 AM" src="https://user-images.githubusercontent.com/42948407/224634493-54c4973e-1169-413e-89e9-adf5b0cdb87e.png">\
+The query of ?search is found and the split of s= is found, therefore we can search for "bo" out of all of the words in the arraylist. We do this by seing all of the words that contain the letters "bo". One word of "boat" is found.
+6. Search for "a"
+<img width="377" alt="Screen Shot 2023-03-13 at 12 24 38 AM" src="https://user-images.githubusercontent.com/42948407/224634521-9df1110d-547b-414a-b68d-533c1f91f35d.png">\
+The query of ?search is found and the split of s= is found, therefore we can search for "a" out of all of the words in the arraylist. We do this by seing all of the words that contain the letter "a". 4 words found with the letter, showing that this program works for multiple matches, too. This works by using a for loop to iterate through every word is ArrayList words, then it uses the .contains() method to check if each word contains "a", then it adds matching words to ArrayList found.
+Multiple words come up in this example.
+7. Search for "t"
+<img width="386" alt="Screen Shot 2023-03-13 at 12 24 46 AM" src="https://user-images.githubusercontent.com/42948407/224634546-468beba1-1c68-497b-8bcf-55c2d6e681ea.png">\
+The query of ?search is found and the split of s= is found, therefore we can search for "t" out of all of the words in the arraylist. We do this by seing all of the words that contain the letter "t". 4 words found with the letter, showing that this program works for multiple matches, too. This works by using a for loop to iterate through every word is ArrayList words, then it uses the .contains() method to check if each word contains "t", then it adds matching words to ArrayList found.
+8. Search for "ee"
+<img width="372" alt="Screen Shot 2023-03-13 at 12 24 54 AM" src="https://user-images.githubusercontent.com/42948407/224634558-aff2563f-0e9d-42db-a881-7bd7d799b02d.png">\
+The query of ?search is found and the split of s= is found, therefore we can search for "ee" out of all of the words in the arraylist. We do this by seing all of the words that contain the letters "ee". 1 word "tree" was found, showing that this program works with a different search query from last time. This works by using a for loop to iterate through every word is ArrayList words, then it uses the .contains() method to check if each word contains "a", then it adds matching words to ArrayList found. Notice that the words are different from when we checked for "t". This is because the ArrayList found is refreshed every single call to a new URL, so none of the searches we made before will collide with the new searches.
